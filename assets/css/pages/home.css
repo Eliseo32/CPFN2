@@ -1,5 +1,5 @@
 .hero-section {
-  background: url('/img/hero.jpg') center center / cover no-repeat;
+  background: url('hero.jpg') center center / cover no-repeat;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: overlay;
   min-height: 100vh;

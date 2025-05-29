@@ -62,17 +62,17 @@
 
 /* Clases para las imágenes de fondo de cada tarjeta */
 .bg-carreras {
-  background-image: url('/img/carreras.png');
+  background-image: url('/img/carreras.jpg');
 }
 
 .bg-inscripciones {
-  background-image: url('/img/inscripciones.png');
+  background-image: url('/img/inscripciones.jpg');
 }
 
 .bg-noticias {
-  background-image: url('/img/noticias.png');
+  background-image: url('/img/noticias.jpg');
 }
 
 .bg-nosotros {
-  background-image: url('/img/sobreNosotros.png');
+  background-image: url('/img/sobreNosotros.jpg');
 }

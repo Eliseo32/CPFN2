@@ -1,7 +1,7 @@
 body {
   font-family: var(--font-principal);
   /* background-color: #212529;  <-- Puedes comentar o eliminar esta línea si la imagen cubre todo */
-  background-image: url('/assets/img/bg\ body.jpeg'); /* Reemplaza con la ruta a tu imagen */
+  background-image: url('/img/bg\ body.jpeg'); /* Reemplaza con la ruta a tu imagen */
   background-size: cover; /* Asegura que la imagen cubra todo el body sin dejar espacios */
   background-position: center center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */

@@ -1,0 +1,78 @@
+.accesos-rapidos {
+  margin-top: -80px; /* Mantén este valor o ajústalo si es necesario para la superposición */
+  z-index: 3;
+}
+
+.quick-card {
+  /* Fondo sólido: el color de la imagen de fondo del body */
+  background-color: #1a1a1a; /* Un gris oscuro similar al de la imagen bg body.jpeg */
+  
+  /* Borde neón azul claro */
+  border: 1px solid rgba(0, 204, 255, 0.7); /* Borde azul claro neón */
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.2); /* Sombra suave para el efecto neón inicial */
+  
+  color: white; /* Color del texto general de la tarjeta */
+  border-radius: 1rem;
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+  /* Transición para el hover, asegurando que solo el transform y box-shadow se suavicen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.quick-card:hover {
+  transform: scale(1.05); /* Restauramos el zoom al hacer hover */
+  /* Puedes añadir una sombra más intensa aquí si quieres que el neón resalte más al hacer hover */
+  box-shadow: 0 0 25px rgba(0, 204, 255, 0.6); /* Sombra más fuerte al hacer hover */
+}
+
+.card-content {
+  position: relative;
+  z-index: 2; /* Asegura que el contenido esté por encima del fondo base */
+  height: 100%; /* Asegura que ocupe el espacio */
+  display: flex; /* Para centrar el contenido */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem; /* Espaciado interno */
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  /* Mantenemos las imágenes de fondo aquí como estaban */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  opacity: 0; /* ¡MUY IMPORTANTE! Vuelve a ser 0 por defecto (invisible) */
+  transition: opacity 0.4s ease-in-out; /* Mantenemos la transición de opacidad */
+  z-index: 3; /* Para que aparezca encima del contenido base al hacer hover */
+  color: #fff;
+  padding: 1rem;
+  backdrop-filter: brightness(0.4); /* Mantenemos el filtro para oscurecer la imagen al aparecer */
+  -webkit-backdrop-filter: brightness(0.4); /* Para compatibilidad */
+}
+
+/* El overlay se hace visible solo al hacer hover */
+.quick-card:hover .card-overlay {
+  opacity: 1; /* Al hacer hover, el overlay (con la imagen de fondo) se vuelve visible */
+}
+
+/* Clases para las imágenes de fondo de cada tarjeta */
+.bg-carreras {
+  background-image: url('/assets/img/carreras.png');
+}
+
+.bg-inscripciones {
+  background-image: url('/assets/img/inscripciones.png');
+}
+
+.bg-noticias {
+  background-image: url('/assets/img/noticias.png');
+}
+
+.bg-nosotros {
+  background-image: url('/assets/img/sobreNosotros.png');
+}

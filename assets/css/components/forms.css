@@ -1,0 +1,128 @@
+/* --- Estilos para el Formulario de Inscripción --- */
+.formulario-inscripcion {
+  /* Fondo gris oscuro para el contenedor del formulario */
+  background-color: #1a1a1a; 
+  
+  /* Borde neón azul claro */
+  border: 1px solid rgba(0, 204, 255, 0.7); /* Borde azul claro neón */
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.3); /* Sombra neón */
+  
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 2.5rem; /* Espaciado interno */
+  margin-top: 50px; /* Margen superior */
+  margin-bottom: 50px; /* Margen inferior */
+  
+  color: white; /* Asegura que el texto general del formulario sea blanco */
+}
+
+/* El resto de los estilos para inputs, labels, selects y el botón dentro de este formulario 
+   que ya habíamos configurado (fondo gris oscuro, texto blanco, bordes neón) se mantienen igual. */
+
+.formulario-inscripcion .form-label {
+  color: white;
+}
+
+.formulario-inscripcion .form-control,
+.formulario-inscripcion .form-select {
+  background-color: #1a1a1a;
+  border: 1px solid rgba(0, 204, 255, 0.7);
+  box-shadow: 0 0 8px rgba(0, 204, 255, 0.2);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.formulario-inscripcion .form-select option {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.formulario-inscripcion .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.formulario-inscripcion .form-control:focus,
+.formulario-inscripcion .form-select:focus {
+  border-color: #00e6ff;
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
+  outline: none;
+  background-color: #1a1a1a;
+}
+
+.formulario-inscripcion button[type="submit"] {
+  background-color: #00ccff;
+  border-color: #00ccff;
+  color: black;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario-inscripcion button[type="submit"]:hover {
+  background-color: #00e6ff;
+  border-color: #00e6ff;
+  color: black;
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.8);
+}
+
+/* --- Estilos para el Formulario de Contacto --- */
+
+.formulario-contacto {
+  /* Opcional: Si quieres un fondo para el contenedor del formulario */
+  background-color: #1a1a1a; /* Fondo gris oscuro para el área del formulario */
+  border-radius: 15px; /* Bordes redondeados */
+  border: 1px solid rgba(0, 204, 255, 0.7); /* Borde neón azul claro */
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.3); /* Sombra neón */
+  padding: 2.5rem; /* Espaciado interno */
+  margin-top: 50px; /* Margen superior */
+  margin-bottom: 50px; /* Margen inferior */
+}
+
+.formulario-contacto .form-label {
+  color: white; /* Color del texto del label en blanco */
+}
+
+.formulario-contacto .form-control, /* Inputs y Textareas */
+.formulario-contacto .form-select { /* Si hubiera un select */
+  background-color: #1a1a1a; /* Fondo gris oscuro */
+  border: 1px solid rgba(0, 204, 255, 0.7); /* Borde neón azul claro */
+  box-shadow: 0 0 8px rgba(0, 204, 255, 0.2); /* Sombra suave para el efecto neón inicial */
+  color: white; /* Texto blanco en los inputs */
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.formulario-contacto .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* Color gris claro para el placeholder */
+}
+
+.formulario-contacto .form-control:focus,
+.formulario-contacto .form-select:focus {
+  border-color: #00e6ff; /* Borde más brillante al enfocar */
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.6); /* Sombra neón más intensa al enfocar */
+  outline: none;
+  background-color: #1a1a1a; /* Asegura que el fondo no cambie al enfocar */
+}
+
+/* --- Estilos para el Botón de Envío del Formulario de Contacto --- */
+.formulario-contacto .btn-primary {
+  background-color: #00ccff; /* Color celeste neón para el botón */
+  border-color: #00ccff; /* Borde del botón celeste neón */
+  color: black; /* Texto del botón negro o muy oscuro para contraste */
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario-contacto .btn-primary:hover {
+  background-color: #00e6ff; /* Un azul más brillante al hacer hover */
+  border-color: #00e6ff;
+  color: black;
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.8); /* Sombra neón intensa al hacer hover */
+} 

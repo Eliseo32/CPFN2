@@ -1,0 +1,49 @@
+body {
+  font-family: var(--font-principal);
+  /* background-color: #212529;  <-- Puedes comentar o eliminar esta línea si la imagen cubre todo */
+  background-image: url('/assets/img/bg\ body.jpeg'); /* Reemplaza con la ruta a tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el body sin dejar espacios */
+  background-position: center center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Opcional: fija la imagen para que no se desplace con el scroll */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand img {
+  max-height: 80px;        
+  width: auto;            
+  margin-right: 10px;      
+  vertical-align: middle;   
+}
+
+h2 {
+  color: white;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #212529; 
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  }
+
+  .navbar-nav {
+    gap: 0.5rem;
+  }
+}
+
+.navbar-glass {
+  background-color: rgba(255, 255, 255, 0.1); /* Color blanco translúcido */
+  backdrop-filter: blur(10px); /* Desenfoque del fondo */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Línea sutil */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1); /* Sombra suave */
+}

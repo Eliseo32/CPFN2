@@ -1,0 +1,111 @@
+.navbar {
+  height: 70px;
+}
+
+/* --- Estilos para el Footer (Pie de página) --- */
+footer {
+  /* Fondo gris oscuro sólido, el mismo que las cards de acceso rápido */
+  background-color: #1a1a1a; 
+  
+  /* Borde neón azul claro */
+  border-top: 1px solid rgba(0, 204, 255, 0.7); /* Borde superior neón azul claro */
+  box-shadow: 0 -10px 30px -10px rgba(0, 204, 255, 0.3); /* Sombra superior para el efecto de brillo neón */
+  
+  color: white; /* Asegura que el texto dentro del footer sea blanco */
+  padding: 3rem 0; /* Espaciado interno superior e inferior */
+  text-align: center; /* Centra el contenido del footer si no tienes otra alineación */
+  position: relative; /* Necesario para el z-index */
+  z-index: 1; /* Asegura que esté por encima del fondo general si aplica */
+}
+
+
+
+.card h5 {
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
+
+/* --- Estilos para las Tarjetas .card dentro de la sección de noticias --- */
+/* Ya existentes, solo modificamos o añadimos propiedades */
+
+
+
+/* --- Estilos para la SECCIÓN DE NOTICIAS COMPLETA (el rectángulo con borde neon azul) --- */
+.noticias-seccion-resaltada {
+  /* Fondo con el mismo efecto de la navbar (glassmorphism) */
+  /* Hacer el fondo un poco más translúcido: reducir el valor alfa */
+  background-color: rgba(255, 255, 255, 0.03); /* Reducido de 0.05 a 0.03 para más transparencia */
+  backdrop-filter: blur(10px); /* Desenfoque de fondo */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidad Safari */
+  
+  /* Borde redondeado */
+  border-radius: 15px;
+  
+  /* Sombra y borde para el efecto neón azul claro */
+  box-shadow: 0 0 30px rgba(0, 204, 255, 0.5); /* Sombra difusa azul claro para el brillo */
+  border: 1px solid rgba(0, 204, 255, 0.7); /* Borde delgado de color azul claro */
+  
+  /* Hacerlo más pequeño: reducir aún más el padding y los márgenes */
+  padding: 2rem; /* Reducido de 2.5rem para un contenedor más pequeño */
+  margin-top: 30px; /* Reducido de 40px */
+  margin-bottom: 30px; /* Reducido de 40px */
+
+  /* Asegura que la sección esté por encima del fondo del body */
+  position: relative; 
+  z-index: 2; 
+}
+
+/* --- Ajustes para los elementos DENTRO de esta sección --- */
+
+/* Título de la sección "Últimas Noticias" */
+.noticias-seccion-resaltada h2 {
+  color: white; /* El título debe ser blanco para contrastar con el fondo translúcido */
+  margin-bottom: 2rem; /* Espacio debajo del título */
+}
+
+/* Ajustes para las tarjetas .card individuales dentro de esta sección */
+.noticias-seccion-resaltada .card {
+  background-color: rgba(255, 255, 255, 0.02); /* Fondo de tarjeta sutilmente más translúcido */
+  
+  /* Bordeado neón azul claro para CADA tarjeta de noticia */
+  border: 1px solid rgba(0, 204, 255, 0.4); /* Borde azul claro neón más suave */
+  box-shadow: 0 0 10px rgba(0, 204, 255, 0.1); /* Sombra suave para el efecto neón inicial */
+  
+  border-radius: 10px; /* Bordes redondeados para las tarjetas individuales */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Transición suave para el efecto hover */
+  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+  color: white; /* Asegura que el texto general de la tarjeta sea blanco */
+}
+
+/* Efecto al pasar el ratón (hover) en las tarjetas individuales */
+.noticias-seccion-resaltada .card:hover {
+  transform: translateY(-3px); /* Pequeño levantamiento al hacer hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); /* Sombra ligeramente más pronunciada al hacer hover */
+}
+
+/* Imágenes dentro de las tarjetas (de los carruseles) */
+.noticias-seccion-resaltada .card img {
+  border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior de la imagen */
+}
+
+/* Título de la tarjeta */
+.noticias-seccion-resaltada .card-body h5.card-title {
+  color: var(--color-primario); /* Mantiene tu color primario para el título de la tarjeta */
+  font-weight: 600;
+}
+
+/* Texto de la descripción de la tarjeta */
+.noticias-seccion-resaltada .card-text {
+  color: rgba(255, 255, 255, 0.7); /* Color gris claro para el texto de la descripción */
+}
+
+/* Opcional: Margen entre las tarjetas en pantallas pequeñas (si las tarjetas se apilan) */
+@media (max-width: 767.98px) {
+  .noticias-seccion-resaltada {
+    padding: 1.5rem 1rem; /* Ajuste el padding para pantallas muy pequeñas */
+  }
+  .noticias-seccion-resaltada .row > .col-md-4 {
+    margin-bottom: 1.5rem; /* Agrega espacio entre las tarjetas en móviles */
+  }
+}

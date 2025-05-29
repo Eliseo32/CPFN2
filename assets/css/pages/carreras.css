@@ -1,0 +1,85 @@
+.carreras-header {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 30px rgba(0, 204, 255, 0.5);
+  color: white;
+  padding: 5rem 0;
+}
+
+.carrera-card {
+  
+  transition: transform 0.3s ease;
+}
+
+.carrera-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+/* --- Estilos para las Cards de Carrera --- */
+
+/* Seleccionamos las cards generales dentro de las columnas de la sección de carreras */
+.container.py-5 .col-md-4 .card {
+  /* Fondo gris oscuro sólido, el mismo que las cards de acceso rápido y el footer */
+  background-color: #1a1a1a; 
+  
+  /* Borde neón azul claro */
+  border: 1px solid rgba(0, 204, 255, 0.7); /* Borde azul claro neón */
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.2); /* Sombra suave para el efecto neón inicial */
+  
+  color: white; /* Asegura que el texto dentro de la tarjeta sea blanco */
+  border-radius: 1rem; /* Bordes redondeados consistentes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para efectos de hover */
+}
+
+/* Efecto al pasar el ratón (hover) en las cards de carrera */
+.container.py-5 .col-md-4 .card:hover {
+  transform: translateY(-5px); /* Un ligero levantamiento al hacer hover */
+  box-shadow: 0 0 25px rgba(0, 204, 255, 0.6); /* Sombra neón más intensa al hacer hover */
+  /* Mantén el borde estático como en las noticias */
+}
+
+/* Ajustes para el contenido de las cards de carrera */
+.container.py-5 .col-md-4 .card-img-top {
+  border-radius: 1rem 1rem 0 0; /* Bordes redondeados en la parte superior de la imagen */
+}
+
+.container.py-5 .col-md-4 .card-body {
+  padding: 1.5rem; /* Asegura un padding consistente */
+}
+
+.container.py-5 .col-md-4 .card-title {
+  color: var(--color-primario); /* Mantiene tu color primario para el título */
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.container.py-5 .col-md-4 .card-text {
+  color: rgba(255, 255, 255, 0.8); /* Texto de descripción en gris claro */
+  margin-bottom: 1rem;
+}
+
+/* Estilo para el botón "Más información" */
+.container.py-5 .col-md-4 .btn-primary {
+  background-color: #00ccff; /* Color de fondo del botón neón azul claro */
+  border-color: #00ccff; /* Borde del botón neón azul claro */
+  color: black; /* Texto del botón negro o muy oscuro para contraste */
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.container.py-5 .col-md-4 .btn-primary:hover {
+  background-color: #00e6ff; /* Un azul más brillante al hacer hover */
+  border-color: #00e6ff;
+  color: black;
+}
+

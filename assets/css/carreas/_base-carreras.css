@@ -1,0 +1,93 @@
+/* --- Estilos para las Páginas Individuales de Carrera --- */
+
+/* Header de la Carrera (Header del Hero) */
+.carrera-single-header {
+  background-color: #1a1a1a; /* Fondo gris oscuro */
+  border-bottom: 1px solid rgba(0, 204, 255, 0.7); /* Borde neón inferior */
+  box-shadow: 0 0 30px rgba(0, 204, 255, 0.5);
+  color: white;
+  padding: 5rem 0; /* Espaciado interno */
+  position: relative; /* Para el z-index si tienes fondo fijo en body */
+  z-index: 1;
+}
+
+.carrera-single-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #00ccff; /* Título de la carrera en color neón */
+  text-shadow: 0 0 10px rgba(0, 204, 255, 0.5); /* Sutil brillo en el título */
+}
+
+.carrera-single-header p.lead {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Estilos para las Secciones de Detalle de la Carrera (Acerca de, Plan de Estudios, etc.) */
+.carrera-detalle-seccion {
+  background-color: rgba(255, 255, 255, 0.03); /* Fondo ligeramente translúcido como la sección de noticias */
+  backdrop-filter: blur(5px); /* Desenfoque de fondo */
+  -webkit-backdrop-filter: blur(5px);
+  
+  border-radius: 15px; /* Bordes redondeados */
+  border: 1px solid rgba(0, 204, 255, 0.5); /* Borde neón */
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.3); /* Sombra neón */
+  
+  padding: 2.5rem; /* Espaciado interno */
+  color: white; /* Color del texto general de la sección */
+}
+
+.carrera-detalle-seccion h2 {
+  color: #00ccff; /* Títulos de las secciones en neón */
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center; /* Centrar el título de la sección */
+  text-decoration: underline; /* Subrayar el título de la sección */
+}
+
+.carrera-detalle-seccion p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+}
+
+.carrera-detalle-seccion ul {
+  list-style: none; /* Quitar viñetas predeterminadas */
+  padding-left: 0;
+}
+
+.carrera-detalle-seccion ul li {
+  color: white;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+/* Iconos dentro de las listas (si usas Bootstrap Icons) */
+.carrera-detalle-seccion ul li i {
+  color: #00ccff; /* Iconos en color neón */
+  font-size: 1.2rem;
+}
+
+/* Botón de inscripción al final de la página (si tiene la clase .btn-primary) */
+.carrera-detalle-seccion .btn-primary {
+  background-color: #00ccff; /* Color de fondo del botón neón azul claro */
+  border-color: #00ccff; /* Borde del botón neón azul claro */
+  color: black; /* Texto del botón negro o muy oscuro para contraste */
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carrera-detalle-seccion .btn-primary:hover {
+  background-color: #00e6ff; /* Un azul más brillante al hacer hover */
+  border-color: #00e6ff;
+  color: black;
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.8); /* Sombra neón intensa al hacer hover */
+}
+
+/* Opcional: Estilo para la imagen principal del header de la carrera */
+.carrera-single-header img {
+    max-height: 400px; /* Limita la altura de la imagen del header */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
+    width: 100%;
+}

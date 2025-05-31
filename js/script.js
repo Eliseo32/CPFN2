@@ -4,7 +4,6 @@
 
   filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Remover clase 'active' de todos los botones
       filterButtons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
